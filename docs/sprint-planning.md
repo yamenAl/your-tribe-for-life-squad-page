@@ -1,6 +1,10 @@
 # Your Tribe for Life
 
-## Sprint Planning
+## Sprint Planning (Maandag)
+
+*In de workshop S13W1-01-kickoff-ytfl wordt stap voor stap uitgelegd wat je moet doen.*
+
+De eerste dag na de zomer gaan we hard aan de slag! Je gaat met een team van drie personen een squadpage op basis van Directus en Sveltekit maken.
 
 ### Opdrachten tijdens de workshop
 

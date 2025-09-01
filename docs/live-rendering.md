@@ -1,6 +1,6 @@
 # Your Tribe for Life
 
-## Live Rendering (Woensdag)
+## Live Rendering
 
 Over het weergeven van informatie uit Directus door middel van Sveltekit. 
 
@@ -14,7 +14,7 @@ Over het weergeven van informatie uit Directus door middel van Sveltekit.
 
 Vorig jaar hebben jullie al gewerkt met dynamische data vanuit Directus. Toen met een node server.js en templates in liquid. 
 
-![alt text](./image.png)
+![alt text](../assets/image.png)
 _Herinner je deze flow nog?_
 
 Dit jaar gaan jullie aan de slag met het framework Svelte met SvelteKit. In SvelteKit is het ook mogelijk om met dynamische data van Directus, of andere API's, te werken. 
@@ -52,11 +52,12 @@ Maak een overzichtspagina en een detailpagina voor je project op basis van de RA
 - [Getting started @ Svelte docs](https://svelte.dev/docs/svelte/getting-started)
 
 
-### Extra uitdagingen (optioneel)
-<!-- Dit is voor de hardlopers die iets extra's willen. -->
+### 💪 Extra uitdagingen
 
 - Zoek een manier om dezelfde data niet meermaals op te halen
-- Begin componentbased met het opzetten van je templates
+- Begin component-based met het opzetten van je templates
 
 ### Checkout
-<!-- Een drietal vragen die ze kunnen opnemen in hun learning journal, waar de squadleaders dan weer op terug komen op vrijdag. -->
+
+1. Welke verschillen merk je tussen het ophalen van data in Liquid (jaar 1) en in SvelteKit?
+2. Waar liep je vast, en hoe heb je dat opgelost?
