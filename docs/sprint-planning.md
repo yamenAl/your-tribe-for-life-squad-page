@@ -2,7 +2,25 @@
 
 ## Sprint Planning
 
+### Opdrachten tijdens de workshop
 
+Jullie gaan met een nieuw team samenwerken. Om heldere afspraken te kunnen maken is het belangrijk direct serieus te beginnen en van elkaar te weten wat sterke kanten en leervragen zijn. Als dit bekend is kan het werk goed verdeeld worden en komt iedereen aan diens leervragen toe.
+
+#### Persoonlijke leervragen (individueel)
+
+- [ ] Formuleer twee of drie leervragen als uitgangspunt voor deze sprint.
+- [ ] Vraag klas- of oud teamgenoten om hulp als je er niet uitkomt.
+
+*Protip: Denk aan de gedragscriteria én aan technische uitdaging.*
+
+#### Teamafspraken (als team)
+
+- [ ] Lees de [instructies voor de squadpage leertaak](INSTRUCTIONS.md) en de sprint planning (dit bestand) allemaal zorgvuldig door
+- [ ] Vul met elkaar de uitgebreide versie van het [teamcanvas](https://theteamcanvas.com/) in en zorg dat iedereen op de hoogte is van elkaars *personal goals* (leervragen)
+- [ ] Maak afspraken over samenwerking, je houdt je in ieder geval aan de [FDND Code Conventies](https://docs.fdnd.nl/conventies.html).
+- [ ] Leg bovenstaande zaken vast in CONTRIBUTING.md
+
+*ProTip: Verwerk sterke kanten en jouw leervragen en maak heldere afspraken!*
 
 ### Voorgestelde aanpak squadpage
 Semester 3 bereid je voor op de beroepspraktijk. Om die reden werken we serieuzer waarbij we gericht zijn op de werkwijze die je straks in je stagebedrijf of bij FDND-Agency ook gaat hanteren. Hoe meer je de voorgestelde werkwijze omarmt, hoe makkelijker je straks in een bedrijf mee kunt draaien.
