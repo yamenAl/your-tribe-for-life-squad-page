@@ -66,8 +66,6 @@ Met MoSCoW bepaal je welke user stories belangrijker zijn dan andere:
 - [MoSCoW uitleg (Atlassian)](https://www.atlassian.com/agile/project-management/moscow-prioritization)
 
 ### 💪 Extra uitdagingen
-
-- Zoek uit welke stappen 
 - Vergelijk jullie eigen inschattingen met een ander team: waar verschillen jullie en waarom?  
 - Analyseer achteraf: hoeveel stories bleken lastiger of makkelijker dan je dacht?  
 
