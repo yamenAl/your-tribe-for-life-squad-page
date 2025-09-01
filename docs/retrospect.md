@@ -22,4 +22,4 @@ Geef en ontvang feedback op de code en het design van je squadpage en je visitek
 -->
 
 ### Checkout
-<!-- Een drietal vragen die ze kunnen opnemen in hun learning journal, waar de squadleaders dan weer op terug komen op vrijdag. -->
+<!-- Een drietal vragen die ze kunnen opnemen in hun learning journal, waar de squadleaders dan weer op terug komen op vrijdag. Handig om die te koppelen aan een indicator. -->

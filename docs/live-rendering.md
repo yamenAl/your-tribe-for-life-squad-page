@@ -59,5 +59,5 @@ Maak een overzichtspagina en een detailpagina voor je project op basis van de RA
 
 ### Checkout
 
-1. Welke verschillen merk je tussen het ophalen van data in Liquid (jaar 1) en in SvelteKit?
+1. Welke verschillen merk je tussen het ophalen van data in Node+Liquid (jaar 1) en in Svelte+SvelteKit?
 2. Waar liep je vast, en hoe heb je dat opgelost?
