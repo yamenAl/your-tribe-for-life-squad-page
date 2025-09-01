@@ -1,8 +1,10 @@
 # Your Tribe for Life
 
-## Sprint Planning
+## Sprint Planning (Maandag)
 
+*In de workshop S13W1-01-kickoff-ytfl wordt stap voor stap uitgelegd wat je moet doen.*
 
+De eerste dag na de zomer gaan we hard aan de slag! Je gaat met een team van drie personen een squadpage op basis van Directus en Sveltekit maken.
 
 ### Voorgestelde aanpak squadpage
 Semester 3 bereid je voor op de beroepspraktijk. Om die reden werken we serieuzer waarbij we gericht zijn op de werkwijze die je straks in je stagebedrijf of bij FDND-Agency ook gaat hanteren. Hoe meer je de voorgestelde werkwijze omarmt, hoe makkelijker je straks in een bedrijf mee kunt draaien.
