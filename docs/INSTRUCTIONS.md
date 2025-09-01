@@ -1,5 +1,5 @@
 
-# Your Tribe for Life squad page
+# Your Tribe for Life
 
 Ontwerp en ontwikkel met een team een overzicht van jouw tribe met alle online visitekaartjes, op basis van een headless CMS en een framework.
 
@@ -24,15 +24,27 @@ Deze leertaak wordt behandeld in sprint 13. Er worden verschillende workshops aa
 
 ### Week 2
 
-- []() - Maandag
-- []() - Woensdag
-- []() - Vrijdag
+- [Creative Coding](creative-coding.md) - Maandag
+- [Prioriteren](prioriteren.md) - Woensdag
+- [Code & Design Review](code-design-review-week-2.md) - Vrijdag
 
 ### Week 3
 
-- []() - Maandag
-- []() - Woensdag
-- []() - Vrijdag
+- [Components](components.md) - Maandag
+- [Wrap-up](wrapup.md) - Woensdag
+- [Retrospect](retrospect.md) - Vrijdag
+
+## Bronnen:
+
+- [Content Inventory and Auditing 101 @ Nielsen Norman Group](https://www.nngroup.com/articles/content-audits/)
+- [Adding items automatically @ GitHub Docs > Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/adding-items-automatically)
+- [Interactive Tutorial @ Svelte.dev](https://svelte.dev/tutorial/kit/introducing-sveltekit)
+- [Sveltekit Docs @ Svelte.dev](https://svelte.dev/docs/kit/introduction)
+- [Directus API Reference @ Directus Docs](https://directus.io/docs/api) NB: Gebruik voor connectie methode uit de les van Dorien, blijf voorlopig weg bij de Directus SDK.
+- [Code Conventies @ FDND Docs](https://docs.fdnd.nl/conventies.html)
+- [Conventionele Commits @ conventionalcommits.org](https://www.conventionalcommits.org/nl/v1.0.0/)
+- [SvelteKit on Netlify @ Netlify Docs](https://docs.netlify.com/build/frameworks/framework-setup-guides/sveltekit/) NB: Je hoeft je nog niet druk te maken over split of edge functies.
+- [Website Testing: A Detailed Guide @ BrowserStack](https://www.browserstack.com/guide/how-to-perform-website-qa-testing)
 
 ## Definitions of Done
 

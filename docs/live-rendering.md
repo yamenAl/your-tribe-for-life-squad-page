@@ -1,4 +1,4 @@
-# Your Tribe for Life Profile Card
+# Your Tribe for Life
 
 ## Live Rendering (Woensdag)
 

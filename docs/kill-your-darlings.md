@@ -1,4 +1,4 @@
-# Your Tribe for Life - Squad Page
+# Your Tribe for Life
 
 # Kill your Darlings
 
