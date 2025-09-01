@@ -1,6 +1,6 @@
 # Your Tribe for Life
 
-## Code/Design review - Week 1
+## Retrospect
 
 Geef en ontvang feedback op de code en het design van je squadpage en je visitekaartje
 

@@ -1,7 +1,11 @@
-# Your Tribe for Life Profile Card
+# Your Tribe for Life
 
+<<<<<<< HEAD:docs/frameworks.md
 ## Frameworks
 <!-- Leuke intro -->
+=======
+## Components
+>>>>>>> 5afd790 (workshop aangevuld):docs/components.md
 
 Redesign je visitekaartje op basis van een headless CMS Directus en het framework SvelteKit.
 
