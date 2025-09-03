@@ -1,0 +1,1 @@
+// hier laden we directus data voor alle pagina's
