@@ -1,15 +1,15 @@
 # Your Tribe for Life
 
-## Creative coding Workshop
+## Creative Coding
 In deze workshop duiken we in de wereld van motion design voor het web, animatie als taal! 
 
 Je leert hoe je met behulp van shapes, direction, easing en timing een eigen 'cohesive motion language' kan opbouwen.
 
 ## Doel van de opdracht
-- Begrijpen wat een *motion language* is en hoe je die kan ontwerpen.  
-- Verschillende soorten animaties herkennen en toepassen: loading, appear/scroll en view transitions.  
-- Zelf inspiratiebronnen onderzoeken en verzamelen.  
-- Technieken leren om animaties in de praktijk te implementeren (CSS keyframes, staggers, scroll-animaties, view transitions, GSAP*).
+- Begrijpen wat een *motion language* is en hoe je die kan ontwerpen
+- Verschillende soorten animaties herkennen en toepassen: loading, appear/scroll en view transitions
+- Zelf inspiratiebronnen onderzoeken en verzamelen 
+- Technieken leren om animaties in de praktijk te implementeren (CSS keyframes, staggers, scroll-animaties, view transitions, GSAP*)
 
  (*) GSAP als we tijd hebben :)
 
@@ -51,11 +51,13 @@ Je leert hoe je met behulp van shapes, direction, easing en timing een eigen 'co
 **EXTRA** 
 - [GSAP docs](https://gsap.com/docs/v3/)  
 
-
 ## 💪 Extra uitdagingen
 - Creeer animaties op basis van classes die je kan hergebruiken 🤩
 - Probeer GSAP!!!11@ 🤩
 
-## Checkout
+## Leervragen
+
+Zet de antwoorden in je learning journal.
+
 1. Welke keuzes heb jij gemaakt in jouw motion language (shapes, direction, easing, duration)?  
 3. Hoe zou je animatie kunnen toepassen om de gebruikerservaring van je overzichtspagina te versterken?
