@@ -34,3 +34,20 @@
     <!-- Selecteerd een willekeurig profiel -->
     <button>random</button>
 </div>
+
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+</style>
