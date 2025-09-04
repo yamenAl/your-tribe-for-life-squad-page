@@ -1,0 +1,279 @@
+
+{
+    "data": [
+      {
+        "id": 10,
+        "name": "abeer",
+        "profilepicture": "/pixelicons/abeer.png",
+        "squad": "2E"
+        
+      },
+      {
+        "name": "Wing-San Lee",
+        "profilepicture": "/pixelicons/wingsanlee.png",
+        "squad": "2F"
+        
+      },
+      {
+        "id": 23,
+        "name": "Inez El Azzouzi",
+        "profilepicture": "/pixelicons/inez.png",
+        "squad": "2E"
+      },
+      {
+        "id": 25,
+        "name": "Akiko Schermer",
+        "profilepicture": "/pixelicons/akiko.png",
+        "squad": "2F"
+      },
+      {
+        "id": 48,
+        "name": "Alisa Afanasieva",
+        "profilepicture": "/pixelicons/alisa.png",
+        "squad": "2E"
+      },
+      {
+        "id": 54,
+        "name": "Tristan Katte",
+        "profilepicture": "/pixelicons/tristan.png",
+        "squad": "2E"
+      },
+      {
+        "id": 80,
+        "name": "Nadira Ben Salah",
+        "profilepicture": "/pixelicons/nadira.png",
+        "squad": "2E"
+
+      },
+      {
+        "id": 81,
+        "name": "Amir Amerian",
+        "profilepicture": "/pixelicons/amir.png",
+        "squad": "2E"
+      
+      },
+      {
+        "id": 144,
+        "name": "Amber Schalker",
+        "profilepicture": "/pixelicons/amber.png",
+        "squad": "2F"
+      },
+      {
+        "id": 146,
+        "name": "Branco van Beek",
+        "profilepicture": "/pixelicons/branco.png",
+        "squad": "2F"
+      },
+      {
+        "id": 148,
+        "name": "Clarice Boerlijst",
+        "profilepicture": "/pixelicons/clarice.png",
+        "squad": "2F"
+      },
+      {
+        "id": 149,
+        "name": "Colin de Groot",
+        "profilepicture": "/pixelicons/colin.png",
+        "squad": "2F"
+      },
+      {
+        "id": 150,
+        "name": "Dylan van Nierop",
+        "profilepicture": "/pixelicons/dylan.png",
+        "squad": "2F"
+      },
+      {
+        "id": 151,
+        "name": "Fatima Zohra El Ayadi",
+        "profilepicture": "/pixelicons/fatima-a.png",
+        "squad": "2F"
+      },
+      {
+        "id": 152,
+        "name": "Fatima El Hilali",
+        "profilepicture": "/pixelicons/fatima-h.png",
+        "squad": "2F"
+      },
+      {
+        "id": 153,
+        "name": "Halima Dinle",
+        "profilepicture": "/pixelicons/halima.png",
+        "squad": "2F"
+      },
+      {
+        "id": 154,
+        "name": "Iris van Willigen",
+        "profilepicture": "/pixelicons/iris.png",
+        "squad": "2F"
+      },
+      {
+        "id": 155,
+        "name": "Jules Bruins",
+        "profilepicture": "/pixelicons/jules.png",
+        "squad": "2F"
+      },
+      {
+        "id": 156,
+        "name": "Julia Stevens",
+        "profilepicture": "/pixelicons/julia.png",
+        "squad": "2F"
+      },
+      {
+        "id": 157,
+        "name": "Karima Mouadi",
+        "profilepicture": "/pixelicons/karima.png",
+        "squad": "2F"
+      },
+      {
+        "id": 158,
+        "name": "Kim Nikita Schijf",
+        "profilepicture": "/pixelicons/kim.png",
+        "squad": "2F"
+      },
+      {
+        "id": 160,
+        "name": "Marcin Magdziak",
+        "profilepicture": "/pixelicons/marcin.png",
+        "squad": "2F"
+      },
+      {
+        "id": 161,
+        "name": "Matthijs ten Brink",
+        "profilepicture": "/pixelicons/matthijs.png",
+        "squad": "2F"
+      },
+      {
+        "id": 162,
+        "name": "Nadia Visser",
+        "profilepicture": "/pixelicons/nadia.png",
+        "squad": "2F"
+      },
+      {
+        "id": 164,
+        "name": "Ravi Tjikhoeri",
+        "profilepicture": "/pixelicons/ravi.png",
+        "squad": "2F"
+      },
+      {
+        "id": 165,
+        "name": "Saif Muhamad",
+        "profilepicture": "/pixelicons/saif.png",
+        "squad": "2F"
+      },
+      {
+        "id": 166,
+        "name": "Ties Beeftink",
+        "profilepicture": "/pixelicons/ties.png",
+        "squad": "2F"
+      },
+      {
+        "id": 167,
+        "name": "Viresh Sheoratan",
+        "profilepicture": "/pixelicons/viresh.png",
+        "squad": "2F"
+      },
+      {
+        "id": 168,
+        "name": "Anouar Aït Brahim",
+        "profilepicture": "/pixelicons/anouar.png",
+        "squad": "2E"
+      },
+      {
+        "id": 169,
+        "name": "Anouk de Rooij",
+        "profilepicture": "/pixelicons/anouk.png",
+        "squad": "2E"
+      },
+      {
+        "id": 171,
+        "name": "Arman Voogd",
+        "profilepicture": "/pixelicons/arman.png",
+        "squad": "2E"
+      },
+      {
+        "id": 174,
+        "name": "Kerem Tutucu",
+        "profilepicture": "/pixelicons/kerem.png",
+        "squad": "2E"
+      },
+      {
+        "id": 175,
+        "name": "Kyan Gijtenbeek",
+        "profilepicture": "/pixelicons/kyan.png",
+        "squad": "2E"
+      },
+      {
+        "id": 176,
+        "name": "Luuk Tol",
+        "profilepicture": "/pixelicons/luuk.png",
+        "squad": "2E"
+      },
+      {
+        "id": 177,
+        "name": "Miel van Sleeuwen",
+        "profilepicture": "/pixelicons/miel.png",
+        "squad": "2E"
+      },
+      {
+        "id": 178,
+        "name": "Mikiyas Hadis",
+        "profilepicture": "/pixelicons/mikiyas.png",
+        "squad": "2E"
+      },
+      {
+        "id": 179,
+        "name": "Nayome Doelwijt",
+        "profilepicture": "/pixelicons/nayome.png",
+        "squad": "2E"
+      },
+      {
+        "id": 181,
+        "name": "Renzo Wille",
+        "profilepicture": "/pixelicons/renzo.png",
+        "squad": "2E"
+      },
+      {
+        "id": 182,
+        "name": "Rick Pijnacker",
+        "profilepicture": "/pixelicons/rick.png",
+        "squad": "2E"
+      },
+      {
+        "id": 186,
+        "name": "Sebastiaan Hagoort",
+        "profilepicture": "/pixelicons/sebastiaan.png",
+        "squad": "2E"
+      },
+      {
+        "id": 188,
+        "name": "Sidney Hermus",
+        "profilepicture": "/pixelicons/sidney.png",
+        "squad": "2E"
+      },
+      {
+        "id": 189,
+        "name": "Stella Clough",
+        "profilepicture": "/pixelicons/stella.png",
+        "squad": "2E"
+      },
+      {
+        "id": 190,
+        "name": "Süleyman Huzeyfe Gökgül",
+        "profilepicture": "/pixelicons/suleyman.png",
+        "squad": "2E"
+      },
+      {
+        "id": 191,
+        "name": "Yamen Al Sharabi",
+        "profilepicture": "/pixelicons/yamen.png",
+        "squad": "2E"
+      },
+      {
+        "id": 236,
+        "name": "Recep Yildiz",
+        "profilepicture": "/pixelicons/recep.png",
+        "squad": "2E"
+      }
+    ]
+  } 
+    
