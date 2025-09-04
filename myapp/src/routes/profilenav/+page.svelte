@@ -7,15 +7,15 @@
   
 <h1>Squads</h1>
 
-<article>
+<div>
     <!-- filter voor squads -->
     <form>
         <fielset>
             <legend>Select a squad</legend>
             <input type="radio" name="squad" value="e">
-            <label for="">squad E</label>
+            <label for="squad-e">squad E</label>
             <input type="radio" name="squad" value="f">
-            <label for="">squad F</label>
+            <label for="squad-f">squad F</label>
         </fielset>
     </form>
 
@@ -25,7 +25,7 @@
         {#each localData.data as item}
             <li>
                 <button>
-                    <img src={item.profilepicture} alt={item.name} width="80"/>
+                    <img src={item.profilepicture} alt={item.name} width="80" />
                 </button>
             </li>
         {/each}
@@ -33,4 +33,4 @@
 
     <!-- Selecteerd een willekeurig profiel -->
     <button>random</button>
-</article>
+</div>
