@@ -15,8 +15,8 @@
   </ul>
 
 <h2>Directus data</h2>
-{#each members as member}
-<p>{member.name}</p>
+{#each memberData as member}
+  <p>{member.name}</p>
 {/each}
 
 
