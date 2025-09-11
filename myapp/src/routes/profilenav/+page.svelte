@@ -10,13 +10,13 @@
 <div>
     <!-- filter voor squads -->
     <form>
-        <fielset>
+        <fieldset>
             <legend>Select a squad</legend>
             <input type="radio" name="squad" value="e">
             <label for="squad-e">squad E</label>
             <input type="radio" name="squad" value="f">
             <label for="squad-f">squad F</label>
-        </fielset>
+        </fieldset>
     </form>
 
     <!-- Nayome: Hier kan je werken aan de knoppen -->
@@ -36,17 +36,23 @@
 </div>
 
 <style>
+    /* ALGEMEEN */
+    form, button {
+        cursor: pointer;
+    }
 
     div {
         display: flex;
         flex-direction: column;
     }
 
+    /* FILTEREN OP SQUAD */
     fieldset {
         display: flex;
         flex-direction: row;
     }
 
+    /* USER MENU */
     ul {
         display: flex;
         flex-direction: row;
@@ -58,27 +64,22 @@
     li {
         list-style-type: none;
     }
-    
-    button, form {
-        cursor: pointer;
-    }
 
     .user-btn {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        width: 5rem;
+        height: 5rem;
         background-color: #211C75;
         box-shadow: inset 0px -25px 0px 0px #351FB7;
         border: solid 4px;
         border-radius: 1rem;
-        width: 5rem;
-        height: 5rem;
-        position: block;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: start;
     }
 
-    img {
-        position: relative;
+    /* Target buttons binnen even genummerde <li>-elementen */
+    ul li:nth-child(even) .user-btn {
+        margin-top: 1rem;
     }
-
 </style>
