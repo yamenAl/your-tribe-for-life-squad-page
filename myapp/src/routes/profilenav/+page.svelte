@@ -24,7 +24,7 @@
     <ul>
         {#each localData.data as item}
             <li>
-                <button>
+                <button class="user-btn">
                     <img src={item.profilepicture} alt={item.name} width="80" />
                 </button>
             </li>
@@ -61,6 +61,13 @@
     
     button, form {
         cursor: pointer;
+    }
+
+    .user-btn {
+        background-color: #211C75;
+        box-shadow: inset 0px -35px 0px 0px #351FB7;
+        border: solid 4px;
+        border-radius: 1rem;
     }
 
 </style>
