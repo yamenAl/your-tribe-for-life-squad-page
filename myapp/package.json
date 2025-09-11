@@ -4,10 +4,9 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''"
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview",
+		"dev": "svelte-kit dev"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.1.0",
