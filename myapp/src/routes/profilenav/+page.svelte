@@ -25,7 +25,7 @@
         {#each localData.data as item}
             <li>
                 <button class="user-btn">
-                    <img src={item.profilepicture} alt={item.name} width="80" />
+                    <img src={item.profilepicture} alt={item.name} width="90" />
                 </button>
             </li>
         {/each}
@@ -70,6 +70,15 @@
         border-radius: 1rem;
         width: 5rem;
         height: 5rem;
+        position: block;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+
+    img {
+        position: relative;
     }
 
 </style>
