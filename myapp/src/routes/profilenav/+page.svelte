@@ -65,9 +65,11 @@
 
     .user-btn {
         background-color: #211C75;
-        box-shadow: inset 0px -35px 0px 0px #351FB7;
+        box-shadow: inset 0px -25px 0px 0px #351FB7;
         border: solid 4px;
         border-radius: 1rem;
+        width: 5rem;
+        height: 5rem;
     }
 
 </style>
