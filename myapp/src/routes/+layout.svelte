@@ -1,15 +1,9 @@
-<!--hier kan je header en footer plaatsen die worden automatich op elke pagina
-hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
-  
-<header>Mijn header</header>
 <script>
   import { page, navigating } from '$app/stores';
   export let data;
   const { localData } = data; // ik heb de localData uit de data gehaald zodat ik die kan gebruiken
 </script>
 
-  <main>
-	<slot /> <!-- dit is een term voor dat de hier de +pages geladen word  -->
 <section class="app">
   <aside class="sidebar">
     <h2>Members</h2>
@@ -56,8 +50,6 @@ hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
       <slot />
     {/key}
   </main>
-  
-  <footer>Mijn footer</footer></section>
 </section>
 
 <!--hier heb ik basis css toegevoegd dit is de linkerkant dus de characterlist die kan
@@ -74,3 +66,9 @@ je hier veranderen clarice -->
   img { border-radius: 8px; object-fit: cover; }
   .loading { position: absolute; top: 8px; right: 16px; opacity: .7; font-size: 14px; }
 
+@media (min-width: 1000px) {
+  .app { display: grid; grid-template-columns: 300px 1fr; height: 100dvh; }
+  .sidebar { order: 1; border-right: 1px solid #eee; padding: 12px; overflow: auto; }
+  .detail { order: 2; position: relative; padding: 20px; overflow: auto; }
+}
+</style>
