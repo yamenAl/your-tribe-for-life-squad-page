@@ -36,6 +36,7 @@
 </div>
 
 <style>
+
     div {
         display: flex;
         flex-direction: column;
@@ -49,5 +50,17 @@
     ul {
         display: flex;
         flex-direction: row;
+        gap: 0.5rem;
+        width: 100vw;
+        overflow: auto;
     }
+
+    li {
+        list-style-type: none;
+    }
+    
+    button, form {
+        cursor: pointer;
+    }
+
 </style>
