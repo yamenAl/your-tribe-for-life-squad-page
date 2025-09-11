@@ -16,10 +16,5 @@
   {/each}
 </ul>
 
-<h2>Directus data</h2>
-{#each members as member}
-<p>{member.name}</p>
-<p>{member.bio}</p>
-{/each}
 
 

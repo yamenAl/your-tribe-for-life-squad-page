@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+
+:root{
+    --dark-blue:#211C75;
+    --blue:#351FB7;
+    --purple:#9E7BEE;
+    --mint:#88E2C1;
+    --yellow:#FFFB96;
+    --rose:#E25F7B;
+    --white: #FFFFFF;
+    --black:#000000;
+
+
+
+    --radius:24px;
+
+    
+  /*  Font Size  */
+  --text-xs: clamp(0.5rem, 1.5vw, 1rem);
+  --text-sm: clamp(1rem, 2vw, 1.2rem);
+  --text-md: clamp(1.25rem, 3vw, 1.5rem);
+  --text-lg: clamp(1.5rem, 4vw, 2rem);
+  --text-xl: clamp(2rem, 5vw, 3rem);
+
+
+  }
+
+
+
+
+
+.card--mint{ background:var(--mint); }
+.card--yellow{ background:var(--yellow); }
+.card--rose{ background:var(--rose); }
+.card span{ margin-top:.5rem; }
