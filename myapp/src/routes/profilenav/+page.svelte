@@ -25,7 +25,7 @@
         {#each localData.data as item}
             <li>
                 <button class="user-btn">
-                    <img src={item.profilepicture} alt={item.name} width="90" />
+                    <img loading="lazy" src={item.profilepicture} alt={item.name} width="90" />
                 </button>
             </li>
         {/each}
