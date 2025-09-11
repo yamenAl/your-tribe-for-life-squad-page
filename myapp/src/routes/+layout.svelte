@@ -39,6 +39,36 @@
     </ul>
   </aside>
 
+  <!-- <h1>Squads</h1>
+
+<div>
+    filter voor squads --
+    <form>
+      <fielset>
+          <legend>Select a squad</legend>
+          <input type="radio" name="squad" value="e">
+          <label for="squad-e">squad E</label>
+          <input type="radio" name="squad" value="f">
+          <label for="squad-f">squad F</label>
+      </fielset>
+  </form>
+
+   Nayome: Hier kan je werken aan de knoppen -->
+  <!-- menu van profielfoto's --
+  <ul>
+      {#each localData.data as item}
+          <li>
+              <button>
+                  <img src={item.profilepicture} alt={item.name} width="80" />
+              </button>
+          </li>
+      {/each}
+  </ul>
+
+   Selecteerd een willekeurig profiel --
+  <button>random</button>
+</div>-->
+
   <main class="detail" aria-busy={$navigating ? 'true' : 'false'}>
     <!-- dit is de loading state , ik heb een if-statement gemaakt: als er genavigeerd wordt laat ik "Laden..." zien -->
     {#if $navigating}
