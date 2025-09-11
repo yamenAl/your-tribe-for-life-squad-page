@@ -45,6 +45,12 @@ hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
     </ul>
   </aside>
 
+  <main class="detail" aria-busy={$navigating ? 'true' : 'false'}>
+    <!-- dit is de loading state , ik heb een if-statement gemaakt: als er genavigeerd wordt laat ik "Laden..." zien -->
+    {#if $navigating}
+      <div class="loading">Laden…</div>
+    {/if}
+
   <!-- Key-block zorgt dat detailcomponent opnieuw rendert bij wisselen van id -->
     {#key $page.params.id}
       <slot />
