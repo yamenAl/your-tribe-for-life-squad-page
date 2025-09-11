@@ -12,9 +12,9 @@
     <form>
         <fieldset>
             <legend>Select a squad</legend>
-            <input type="radio" name="squad" value="e">
+            <input id="squad-e" type="radio" name="squad" value="e">
             <label for="squad-e">squad E</label>
-            <input type="radio" name="squad" value="f">
+            <input id="squad-f" type="radio" name="squad" value="f">
             <label for="squad-f">squad F</label>
         </fieldset>
     </form>
