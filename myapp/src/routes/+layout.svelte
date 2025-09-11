@@ -44,6 +44,12 @@ hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
       {/each}
     </ul>
   </aside>
+
+  <!-- Key-block zorgt dat detailcomponent opnieuw rendert bij wisselen van id -->
+    {#key $page.params.id}
+      <slot />
+    {/key}
   </main>
   
   <footer>Mijn footer</footer></section>
+</section>
