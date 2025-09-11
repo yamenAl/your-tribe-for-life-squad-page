@@ -1,15 +1,15 @@
 <script>
   import { page, navigating } from '$app/stores';
   export let data;
-  const { localData } = data; // ik heb de localData uit de data gehaald zodat ik die kan gebruiken
+  const { MemberData } = data; // ik heb de MemberData uit de data gehaald zodat ik die kan gebruiken
 </script>
 
 <section class="app">
   <aside class="sidebar">
     <h2>Members</h2>
     <ul>
-      <!-- ik heb een each-loop gemaakt die door alle members uit mijn localData gaat -->
-      {#each localData.data as item}
+      <!-- ik heb een each-loop gemaakt die door alle members uit mijn MemberData gaat -->
+      {#each MemberData.data as item}
         <li>
           <!-- ik heb voor elke member een link gemaakt naar /id -->
           <!-- ik heb class:selected gebruikt zodat de geselecteerde member visueel wordt aangegeven -->
@@ -56,7 +56,7 @@
    Nayome: Hier kan je werken aan de knoppen -->
   <!-- menu van profielfoto's --
   <ul>
-      {#each localData.data as item}
+      {#each MemberData.data as item}
           <li>
               <button>
                   <img src={item.profilepicture} alt={item.name} width="80" />

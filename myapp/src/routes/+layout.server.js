@@ -5,10 +5,10 @@
 // (directus data zou vaker verschillen per pagina, daarom zou dat daar beter passen)
 
 // src/routes/+layout.server.js
-import localData from '$lib/data/data.json';
+import MemberData from '$lib/data/data.json';
 
-// ik heb de load functie gemaakt die de localData teruggeeft
+// ik heb de load functie gemaakt die de MemberData teruggeeft
 // zodat elke pagina in mijn project deze data kan gebruiken
 export function load() {
-  return { localData };
+  return { MemberData };
 }
