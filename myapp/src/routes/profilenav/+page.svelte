@@ -32,7 +32,7 @@
     </ul>
 
     <!-- Selecteerd een willekeurig profiel -->
-    <button>random</button>
+    <button aria-label="Generate a random user">random</button>
 </div>
 
 <style>
