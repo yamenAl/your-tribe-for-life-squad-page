@@ -59,3 +59,18 @@ hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
   
   <footer>Mijn footer</footer></section>
 </section>
+
+<!--hier heb ik basis css toegevoegd dit is de linkerkant dus de characterlist die kan
+je hier veranderen clarice -->
+<style>
+    .app { display: grid; grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: 100dvh; }
+    .detail { order: 1; position: relative; padding: 20px; overflow: visible; }
+  .sidebar { order: 2; border-right: 1px solid #eee; padding: 12px; overflow: auto; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li + li { margin-top: 6px; }
+  a { display: flex; align-items: center; gap: 10px; padding: 8px; border-radius: 8px; text-decoration: none; color: inherit; cursor: pointer; }
+  a:hover { background: #f6f6f6; }
+  a.selected { background: #eef5ff; }
+  img { border-radius: 8px; object-fit: cover; }
+  .loading { position: absolute; top: 8px; right: 16px; opacity: .7; font-size: 14px; }
+
