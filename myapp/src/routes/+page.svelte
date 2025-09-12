@@ -1,20 +1,7 @@
-<script>
-  export let data;
-  const { localData } = data // hier word de lokale json data opgehaald en directus data
-  const members=data.members
-  console.log(members)
-</script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<!-- dit is default voor de rechter kant wanneer er geen character is gekozen-->
 
-<h2>Lokaal JSON</h2>
-<ul>
-  {#each localData.data as item}
-    <li>{item.name}</li>
-    <img src={item.profilepicture} alt={item.name} width="80" />
-  {/each}
-</ul>
-
+ <h1>Selecteer links een member</h1>
+<p>Klik op een naam/foto in de lijst om details te zien.</p>
 
 

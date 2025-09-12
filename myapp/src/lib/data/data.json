@@ -52,14 +52,7 @@
         "type": "student"
 
       },
-      {
-        "id": 81,
-        "name": "Amir Amerian",
-        "profilepicture": "/pixelicons/amir.png",
-        "squad": "2E",
-        "type": "student"
-      
-      },
+    
       {
         "id": 144,
         "name": "Amber Schalker",
