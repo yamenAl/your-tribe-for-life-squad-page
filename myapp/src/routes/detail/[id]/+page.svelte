@@ -85,6 +85,12 @@
     display: grid;
     gap: 18px;
     padding: 18px;
+     @media (min-width: 880px) {
+      grid-template-columns: 1fr 1.1fr;
+      align-items: center;
+      gap: 40px;
+      padding: 32px 48px;
+    }
   }
 
   .left {
@@ -176,14 +182,4 @@
   }
 
 
-
-  @media (min-width: 880px) {
-    .page {
-      grid-template-columns: 1fr 1.1fr;
-      align-items: center;
-      gap: 40px;
-      padding: 32px 48px;
-    }
-    .portrait { width: min(460px, 40vw); }
-  }
 </style>
