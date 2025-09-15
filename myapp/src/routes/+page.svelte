@@ -12,7 +12,7 @@
 <ul>
   {#each localData.data as item}
     <li>{item.name}</li>
-    <img src={item.profilepicture} alt={item.name} width="80" />
+    <img src="{item.profilepicture}" alt="Foto van{item.name}" width="80" />
   {/each}
 </ul>
 
