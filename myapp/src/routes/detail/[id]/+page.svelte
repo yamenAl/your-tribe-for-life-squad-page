@@ -12,11 +12,6 @@
   const imgSrc = member.profilepicture || member.avatar || "/no-userprofile.jpg";
 </script>
 
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</svelte:head>
 <Header />
 <main class="page">
   <!-- LEFT: avatar -->
@@ -85,11 +80,11 @@
     display: grid;
     gap: 18px;
     padding: 18px;
-     @media (min-width: 880px) {
-      grid-template-columns: 1fr 1.1fr;
-      align-items: center;
-      gap: 40px;
-      padding: 32px 48px;
+      @media (min-width: 880px) {
+        grid-template-columns: 1fr 1.1fr;
+        align-items: center;
+        gap: 40px;
+        padding: 32px 48px;
     }
   }
 
@@ -112,13 +107,13 @@
 
   .badge {
     position: absolute;
-    top: -20px;        
+    top: -40px;        
     left: 50%;
     transform: translateX(-50%);
     background: var(--yellow);
+    color: var(--black);
     padding: 10px 14px;
     border-radius: 10px;
-    font-family: "Press Start 2P", monospace;
     letter-spacing: .08em;
     box-shadow: 0 4px 0 #d4c46a;
     text-transform: uppercase;
@@ -132,7 +127,6 @@
   background: var(--dark-blue);
   border-radius: var(--radius);
   padding: 14px;
-  box-shadow: 0 16px 0 var(--shadow) inset;
   z-index: 1; 
 }
 
@@ -141,13 +135,16 @@
   position: absolute;
   inset: 0;
   border-radius: var(--radius);
-
-  box-shadow: -30px 25px 0 var(--shadow);
-  z-index: 0; 
+    box-shadow: 0px 25px 0 var(--shadow);
+  z-index: 0;
+      @media (min-width: 880px) {
+      box-shadow: -20px 25px 0 var(--shadow);
+    } 
 }
   .card {
     position: relative;
     background: var(--mint);
+    color: var(--black);
     border: 4px solid var(--dark-blue);
     border-radius: calc(var(--radius) - 6px);
     padding: 18px;
@@ -180,6 +177,5 @@
     font-family: Inter, system-ui, sans-serif;
     font-size: 14px;
   }
-
 
 </style>
