@@ -12,8 +12,8 @@
   const { MemberData } = data;
 </script>
 
-<!-- Hier wordt het component met het menu met alle members ingeladen -->
-<CharacterSelector characters={MemberData.data} />
-
 <!-- Hier wordt de pagina met de geselecteerde member ingeladen -->
 <slot />
+
+<!-- Hier wordt het component met het menu met alle members ingeladen -->
+<CharacterSelector characters={MemberData.data} />
