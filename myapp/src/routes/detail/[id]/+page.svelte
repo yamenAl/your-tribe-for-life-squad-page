@@ -115,7 +115,7 @@
     position: relative;
     background: var(--mint);
     color: var(--black);
-    border: 4px solid var(--dark-blue);
+    border: 4px solid var(--black);
     border-radius: calc(var(--radius) - 6px);
     padding: 18px;
   }
