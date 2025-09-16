@@ -61,8 +61,22 @@
         bottom: 0;
         left: 0;
         width: 100%;
+        height: 35vh;
         padding: 25px;
         box-sizing: border-box;
+        padding: 1rem;
+
+        @media (min-width: 700px) {
+            bottom: auto;
+            width: 50vw;
+            height: 100vh;
+            top: 0;
+            padding: 2rem;
+        }
+    }
+
+    h2 {
+        margin: 0;
     }
 
     /* ALGEMEEN */
@@ -79,6 +93,7 @@
     fieldset {
         display: flex;
         flex-direction: row;
+        border: none;
     }
 
     /* USER MENU */
@@ -88,6 +103,17 @@
         gap: 0.5rem;
         width: 100vw;
         overflow: auto;
+        padding: 0;
+        margin: 0;
+
+        @media (min-width: 700px) {
+            display: grid;
+            grid-template-columns: 5rem 5rem 5rem 5rem;
+            column-gap: 1rem;
+            overflow: auto;
+            height: 75vh;
+            width: 50vw;
+        }
     }
 
     li {
@@ -98,8 +124,8 @@
         display: flex;
         justify-content: center;
         align-items: start;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         background-color: #211C75;
         box-shadow: inset 0px -25px 0px 0px #351FB7;
         border: solid 4px;
@@ -115,12 +141,10 @@
     /* Target buttons binnen even genummerde <li>-elementen */
     ul li:nth-child(even) .user-btn {
         margin-top: 1rem;
-    }
 
-    /* @media (min-width: 1000px) {
-        .app { display: grid; grid-template-columns: 300px 1fr; height: 100dvh; }
-        .sidebar { order: 1; border-right: 1px solid #eee; padding: 12px; overflow: auto; }
-        .detail { order: 2; position: relative; padding: 20px; overflow: auto; } 
-    }  */
+        @media (min-width: 700px) {
+            margin-top: 0;
+        }
+    }
 </style>
   
