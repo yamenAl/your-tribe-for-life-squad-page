@@ -12,8 +12,26 @@
   const { MemberData } = data;
 </script>
 
-<!-- Hier wordt de pagina met de geselecteerde member ingeladen -->
-<slot />
+<div class="layout">
+   <!-- Hier wordt het component met het menu met alle members ingeladen -->
+   <CharacterSelector characters={MemberData.data} />
+  <!-- Hier wordt de pagina met de geselecteerde member ingeladen -->
+  <slot />
+</div>
 
-<!-- Hier wordt het component met het menu met alle members ingeladen -->
-<CharacterSelector characters={MemberData.data} />
+<style>
+
+  /* layout */
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* laptop format */
+  @media (min-width: 700px) {
+      .layout {
+            flex-direction: row;
+        }
+      }
+
+</style>
