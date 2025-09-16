@@ -1,5 +1,4 @@
 <script>
-  import Header from '$lib/components/Header.svelte';
 
   let { data } = $props();
   const member = data.member;
@@ -204,7 +203,6 @@
 
 </style>
 
-<Header />
 
 
 <main class="page">
