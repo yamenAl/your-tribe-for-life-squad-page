@@ -12,37 +12,6 @@
   const imgSrc = member.profilepicture || member.avatar || "/no-userprofile.jpg";
 </script>
 
-<Header />
-<main class="page">
-  <!-- LEFT: avatar -->
-  <section class="left">
-    <figure class="portrait">
-      <figcaption class="badge">{member.name}</figcaption>
-      <img src={imgSrc} alt={"Avatar van " + member.name} />
-    </figure>
-  </section>
-
-  <!-- RIGHT: info panel -->
-  <aside class="panel">
-    <section class="card">
-      <h3>ROLE</h3>
-      <p>{roleText}</p>
-    </section>
-    <section class="card">
-      <h3>NICKNAME</h3>
-      <p>{nickText}</p>
-    </section>
-    <section class="card">
-      <h3>BIO</h3>
-      <p class="bio">{bioText}</p>
-    </section>
-    <section class="card">
-      <h3>SQUADS</h3>
-      <p>{squadsText}</p>
-    </section>
-  </aside>
-</main>
-
 <style>
   :global(:root) {
     --dark-blue:#211C75;
@@ -70,7 +39,6 @@
     height: 100%;
     background: var(--purple);
     color: var(--white);
-    font-family: Inter, system-ui, sans-serif;
   }
 
 
@@ -120,26 +88,28 @@
     white-space: nowrap;
   }
 
- .panel {
+.panel {
   position: relative;
   display: grid;
   gap: 14px;
   background: var(--dark-blue);
   border-radius: var(--radius);
+  border: 4px solid var(--black);
   padding: 14px;
-  z-index: 1; 
-}
+  z-index: 1;
 
-.panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: var(--radius);
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
     box-shadow: 0px 25px 0 var(--shadow);
-  z-index: 0;
-      @media (min-width: 880px) {
+    z-index: 0;
+
+    @media (min-width: 880px) {
       box-shadow: -20px 25px 0 var(--shadow);
-    } 
+    }
+  }
 }
   .card {
     position: relative;
@@ -157,7 +127,6 @@
     background: var(--mint);
     border-radius: 12px;
     padding: 8px 12px;
-    font-family: "Press Start 2P", monospace;
     letter-spacing: .12em;
     font-size: 11px;
   }
@@ -166,7 +135,6 @@
     margin-top: 6px;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Press Start 2P", monospace;
     font-size: 13px;
     line-height: 1.6;
     white-space: pre-line;
@@ -174,8 +142,110 @@
 
   .card .bio {
     text-transform: none;
-    font-family: Inter, system-ui, sans-serif;
     font-size: 14px;
   }
+ 
+  .github-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    top: -22px;
+
+    display: inline-block;
+    padding: 16px 28px;
+    background: var(--rose);
+    color: var(--white);
+    border: 4px solid var(--black);
+    border-radius: 16px;
+    font-size: 14px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 8px 0 var(--btn-shadow);
+    transition: transform .15s ease, box-shadow .15s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: -12px;
+      height: 12px;
+      background: var(--black);
+      border-radius: 12px;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 10px 0 var(--btn-shadow);
+    }
+
+    &:active {
+      transform: translateX(-50%) translateY(2px);
+      box-shadow: 0 4px 0 var(--btn-shadow);
+    }
+
+    @media (min-width: 880px) {
+      top: auto;
+      bottom: -22px;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+
 
 </style>
+
+<Header />
+
+
+<main class="page">
+  <section class="left">
+    <figure class="portrait">
+      <figcaption class="badge">{member.name}</figcaption>
+      <img src={imgSrc} alt={"Avatar van " + member.name} />
+    </figure>
+  </section>
+
+  
+
+  <aside class="panel">
+      {#if member.website}
+    <a
+      href={member.website}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="github-btn"
+      aria-label="Open GitHub"
+    >
+      GITHUB
+    </a>
+  {/if}
+
+    <section class="card">
+      <h3>ROLE</h3>
+      <p>{roleText}</p>
+    </section>
+    <section class="card">
+      <h3>NICKNAME</h3>
+      <p>{nickText}</p>
+    </section>
+    <section class="card">
+      <h3>BIO</h3>
+      <p class="bio">{bioText}</p>
+    </section>
+    <section class="card">
+      <h3>SQUADS</h3>
+      <p>{squadsText}</p>
+    </section>
+    
+  </aside>
+</main>

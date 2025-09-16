@@ -4,7 +4,7 @@ import { error } from '@sveltejs/kit';
 export async function load({ params, fetch }) {
   //  Get the member from Directus API
   const res = await fetch(
-    `https://fdnd.directus.app/items/person/${params.id}?fields=id,name,nickname,avatar,bio,role,squads`
+    `https://fdnd.directus.app/items/person/${params.id}?fields=id,name,nickname,avatar,bio,role,squads,website`
   );
   const { data } = await res.json();
 
