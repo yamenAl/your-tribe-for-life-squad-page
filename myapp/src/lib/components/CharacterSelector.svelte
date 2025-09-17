@@ -8,7 +8,7 @@
   
 <section class="app">
     {#key $page.params.id}
-        <aside class="sidebar">
+        <nav class="sidebar">
         <h2>Members</h2>
 
             <!-- filter voor squads -->
@@ -21,7 +21,6 @@
                     <label for="squad-f">squad F</label>
                 </fieldset>
             </form>
-
 
             <!-- Members knoppen -->
             <ul>
@@ -42,7 +41,7 @@
             <!-- Selecteerd een willekeurig profiel -->
             <button aria-label="Generate a random user">random</button>
 
-        </aside>
+        </nav>
     {/key}
   
     <main class="detail" aria-busy={$navigating ? 'true' : 'false'}>
@@ -52,11 +51,10 @@
         {/if}  
     </main>
 </section>
-  
 
 <style>
     /* Positionering sidebar */
-    aside {
+    nav {
         position: fixed;
         bottom: 0;
         left: 0;
