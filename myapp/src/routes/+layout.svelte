@@ -1,12 +1,12 @@
 <script>
   import { page, navigating } from '$app/stores';
-  import Header from '$lib/components/Header.svelte';  
+  import HamburgerMenu  from '$lib/components/Header.svelte';  
   export let data;
   const { MemberData } = data; // ik heb de MemberData uit de data gehaald zodat ik die kan gebruiken
 </script>
 
 <header>
-  <Header />
+  <HamburgerMenu  />
 </header>
 
 <section class="app">

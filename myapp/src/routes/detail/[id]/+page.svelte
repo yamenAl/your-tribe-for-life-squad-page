@@ -203,8 +203,6 @@
 
 </style>
 
-
-
 <main class="page">
   <section class="left">
     <figure class="portrait">
@@ -212,8 +210,6 @@
       <img src={imgSrc} alt={"Avatar van " + member.name} />
     </figure>
   </section>
-
-  
 
   <aside class="panel">
       {#if member.website}
