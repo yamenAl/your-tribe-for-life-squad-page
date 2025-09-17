@@ -64,6 +64,7 @@
         height: 35vh;
         padding: 25px;
         box-sizing: border-box;
+        background-color: #9E7BEE;
         padding: 1rem;
 
         @media (min-width: 700px) {
@@ -108,11 +109,11 @@
 
         @media (min-width: 700px) {
             display: grid;
-            grid-template-columns: 5rem 5rem 5rem 5rem;
-            column-gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+            grid-gap: 1rem 1rem;
             overflow: auto;
             height: 75vh;
-            width: 50vw;
+            width: 46vw;
         }
     }
 
@@ -128,14 +129,25 @@
         height: 4rem;
         background-color: #211C75;
         box-shadow: inset 0px -25px 0px 0px #351FB7;
-        border: solid 4px;
+        border: solid black 3px;
         border-radius: 1rem;
         overflow: hidden;
         position: block;
+
+        @media (min-width: 700px) {
+            width: 8rem;
+            height: 8rem;
+            border: solid black 6px;
+        }
     }
 
     img {
         position: relative;
+        width: 5.625rem;
+
+        @media (min-width: 700px) {
+            width: 10rem;
+        }
     }
 
     /* Target buttons binnen even genummerde <li>-elementen */
