@@ -1,5 +1,5 @@
 <script>
-  import { HomeLogo, MapLogo, GoBackLogo } from '$lib';
+  import { HomeIcon, MapIcon, GoBackIcon } from '$lib';
 </script>
 
 <input id="menu-toggle" type="checkbox" hidden>
@@ -25,17 +25,17 @@
   <ul class="cards">
     <li>
       <a href="/" aria-label="Home">
-        <HomeLogo aria-hidden="true" focusable="false" />
+        <HomeIcon aria-hidden="true" focusable="false" />
       </a>
     </li>
     <li>
       <a href="/map" aria-label="Map">
-        <MapLogo aria-hidden="true" focusable="false" />
+        <MapIcon aria-hidden="true" focusable="false" />
       </a>
     </li>
     <li>
       <a href="/" aria-label="Go back">
-        <GoBackLogo aria-hidden="true" focusable="false" />
+        <GoBackIcon aria-hidden="true" focusable="false" />
       </a>
     </li>
   </ul>
