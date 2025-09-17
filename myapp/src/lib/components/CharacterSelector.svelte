@@ -55,23 +55,26 @@
   
 
 <style>
+    /* Positionering sidebar */
     aside {
-        margin: 0;
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 100%;
+        display: flex;       
+        flex-direction: column;
+        gap: 1rem;
         height: 35vh;
-        padding: 25px;
+        width: 100%;
         box-sizing: border-box;
-        background-color: #9E7BEE;
         padding: 1rem;
-
+        margin: 0;
+        background-color: #9E7BEE;
+        
+        /* Tablet & laptop */
         @media (min-width: 700px) {
-            bottom: auto;
-            width: 50vw;
-            height: 100vh;
             top: 0;
+            height: 100vh;
+            width: 50vw;
             padding: 2rem;
         }
     }
@@ -80,14 +83,9 @@
         margin: 0;
     }
 
-    /* ALGEMEEN */
+    /* Algemeen */
     form, button {
         cursor: pointer;
-    }
-
-    div {
-        display: flex;
-        flex-direction: column;
     }
 
     /* FILTEREN OP SQUAD */
@@ -98,6 +96,7 @@
     }
 
     /* USER MENU */
+    /* Positionering user buttons */
     ul {
         display: flex;
         flex-direction: row;
@@ -107,11 +106,11 @@
         padding: 0;
         margin: 0;
 
+        /* Tablet & laptop */
         @media (min-width: 700px) {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
             grid-gap: 1rem 1rem;
-            overflow: auto;
             height: 75vh;
             width: 46vw;
         }
@@ -121,19 +120,20 @@
         list-style-type: none;
     }
 
+    /* Styling user buttons */
     .user-btn {
         display: flex;
         justify-content: center;
         align-items: start;
+        overflow: hidden;
         width: 4rem;
         height: 4rem;
         background-color: #211C75;
-        box-shadow: inset 0px -25px 0px 0px #351FB7;
         border: solid black 3px;
+        box-shadow: inset 0px -25px 0px 0px #351FB7;
         border-radius: 1rem;
-        overflow: hidden;
-        position: block;
 
+        /* Tablet & laptop */
         @media (min-width: 700px) {
             width: 8rem;
             height: 8rem;
@@ -146,6 +146,7 @@
         position: relative;
         width: 5.625rem;
 
+        /* Tablet & laptop */
         @media (min-width: 700px) {
             width: 11rem;
         }
@@ -155,6 +156,7 @@
     ul li:nth-child(even) .user-btn {
         margin-top: 1rem;
 
+        /* Tablet & laptop */
         @media (min-width: 700px) {
             margin-top: 0;
         }
