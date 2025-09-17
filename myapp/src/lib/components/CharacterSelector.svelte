@@ -30,7 +30,7 @@
                         <!-- ik heb voor elke member een link gemaakt naar /id -->
                         <!-- ik heb class:selected gebruikt zodat de geselecteerde member visueel wordt aangegeven -->
                         <!-- ik preload de data alvast zodat als er op geklikt word het niet lang hoeft te laden-->
-                        <a class="user-btn" href={`/${item.id}`} data-sveltekit-preload-data="hover" data-sveltekit-preload-code="hover" class:selected={String($page.params.id) === String(item.id)}>
+                        <a class="user-btn" href={`/characters/${item.id}`} data-sveltekit-preload-data="hover" data-sveltekit-preload-code="hover" class:selected={String($page.params.id) === String(item.id)}>
                             <!-- met async komt het beeld wat later maar de rest van de pagina kan sneller laden. Met fetch prioroty focus de browser eerst op laden van de belangerijkste dingen -->
                             <img src={item.profilepicture} alt={item.name} width="90" loading="lazy" decoding="async" fetchpriority="low"/>
                         </a>
