@@ -138,6 +138,7 @@
             width: 8rem;
             height: 8rem;
             border: solid black 6px;
+            box-shadow: inset 0px -40px 0px 0px #351FB7;
         }
     }
 
@@ -146,7 +147,7 @@
         width: 5.625rem;
 
         @media (min-width: 700px) {
-            width: 10rem;
+            width: 11rem;
         }
     }
 
