@@ -18,3 +18,17 @@
 
   </section>
 
+<style>
+.reveal-up {
+  animation: revealPixel 1000ms steps(10) forwards;
+  will-change: clip-path;
+}
+
+@keyframes revealPixel {
+  from { clip-path: inset(100% 0 0 0); } 
+  to   { clip-path: inset(0 0 0 0); }    
+}
+</style>
+    
+
+
