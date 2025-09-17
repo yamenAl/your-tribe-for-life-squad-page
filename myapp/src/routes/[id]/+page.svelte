@@ -9,7 +9,7 @@
     <h1>{member.name}</h1>
     
     {#if member.profilepicture}
-    <img class="character reveal-up" 
+    <img class="character-reveal " 
       src={member.profilepicture} 
       width="300" 
       alt={member.name} 
@@ -19,7 +19,7 @@
   </section>
 
 <style>
-.reveal-up {
+.character-reveal  {
   animation: revealPixel 1000ms steps(10) forwards;
   will-change: clip-path;
 }
