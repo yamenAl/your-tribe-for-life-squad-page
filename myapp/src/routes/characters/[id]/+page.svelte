@@ -23,3 +23,4 @@
     {/if}
   {/key}
   
+  $: ({ member, id } = data ?? {});  

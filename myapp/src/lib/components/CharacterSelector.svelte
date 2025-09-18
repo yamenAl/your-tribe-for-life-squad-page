@@ -1,8 +1,6 @@
 <script>
     // 'navigating' is een store die aangeeft of er momenteel naar een andere pagina wordt genavigeerd
     import { page, navigating } from '$app/stores';
-
-    // Ontvangt een lijst met characters als prop
     export let characters = [];
 </script>
   
@@ -53,111 +51,105 @@
 </section>
 
 <style>
-    /* Positionering sidebar */
-    nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        display: flex;       
-        flex-direction: column;
-        gap: 1rem;
-        height: 35vh;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 1rem;
-        margin: 0;
-        background-color: #9E7BEE;
-        
-        /* Tablet & laptop */
-        @media (min-width: 700px) {
-            top: 0;
-            height: 100vh;
-            width: 50vw;
-            padding: 2rem;
-        }
-    }
+  /* Positionering sidebar */
+nav.sidebar {
+  position: static;                 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  overflow-y:auto;              
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0;
+  background-color: #9E7BEE;
+}
 
-    h2 {
-        margin: 0;
-    }
+/* Top-level media query (niet genest) */
+@media (min-width: 700px) {
+  nav.sidebar {
+    padding: 2rem;
+  }
+}
 
-    /* Algemeen */
-    form, button {
-        cursor: pointer;
-    }
+/* Algemeen */
+h2 { margin: 0; }
+form, button { cursor: pointer; }
 
-    /* FILTEREN OP SQUAD */
-    fieldset {
-        display: flex;
-        flex-direction: row;
-        border: none;
-    }
+/* FILTEREN OP SQUAD */
+fieldset {
+  display: flex;
+  flex-direction: row;
+  border: none;
+}
 
-    /* USER MENU */
-    /* Positionering user buttons */
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        width: 100vw;
-        overflow: auto;
-        padding: 0;
-        margin: 0;
+/* USER MENU */
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: 100%;            
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling:touch;
+}
 
-        /* Tablet & laptop */
-        @media (min-width: 700px) {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
-            grid-gap: 1rem 1rem;
-            height: 75vh;
-            width: 46vw;
-        }
-    }
+@media (min-width: 700px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+    max-height: none;
+    width: 100%;           
+  }
+}
 
-    li {
-        list-style-type: none;
-    }
+@media (min-width: 1000px) {
+  ul {
+    grid-template-columns: repeat(3, minmax(8rem, 1fr)); 
+  }
+}
 
-    /* Styling user buttons */
-    .user-btn {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        overflow: hidden;
-        width: 4rem;
-        height: 4rem;
-        background-color: #211C75;
-        border: solid black 3px;
-        box-shadow: inset 0px -25px 0px 0px #351FB7;
-        border-radius: 1rem;
+li { list-style: none; }
 
-        /* Tablet & laptop */
-        @media (min-width: 700px) {
-            width: 8rem;
-            height: 8rem;
-            border: solid black 6px;
-            box-shadow: inset 0px -40px 0px 0px #351FB7;
-        }
-    }
+/* Styling user buttons */
+.user-btn {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+  background-color: #211C75;
+  border: solid black 3px;
+  box-shadow: inset 0 -25px 0 0 #351FB7;
+  border-radius: 1rem;
+}
 
-    img {
-        position: relative;
-        width: 5.625rem;
+@media (min-width: 700px) {
+  .user-btn {
+    width: 8rem;
+    height: 8rem;
+    border: solid black 6px;
+    box-shadow: inset 0 -40px 0 0 #351FB7;
+  }
+}
 
-        /* Tablet & laptop */
-        @media (min-width: 700px) {
-            width: 11rem;
-        }
-    }
+img {
+  position: relative;
+  width: 5.625rem;
+}
 
-    /* Target buttons binnen even genummerde <li>-elementen */
-    ul li:nth-child(even) .user-btn {
-        margin-top: 1rem;
+@media (min-width: 700px) {
+  img { width: 11rem; }
+}
 
-        /* Tablet & laptop */
-        @media (min-width: 700px) {
-            margin-top: 0;
-        }
-    }
+/* zig-zag offset op mobile, vlak op desktop */
+ul li:nth-child(even) .user-btn { margin-top: 1rem; }
+@media (min-width: 700px) {
+  ul li:nth-child(even) .user-btn { margin-top: 0; }
+}
+
 </style>
   
