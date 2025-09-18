@@ -4,6 +4,9 @@
 
     // Ontvangt een lijst met characters als prop
     export let characters = [];
+
+    // Delay per character in seconden, hierdoor worden de karakters niet tegelijk maar na elkaar ingeladen
+    const loadDelay = 0.025;
 </script>
   
 <section class="app">
@@ -25,8 +28,13 @@
             <!-- Members knoppen -->
             <ul>
                 <!-- ik heb een each-loop gemaakt die door alle members uit mijn MemberData gaat -->
-                {#each characters as item}
-                    <li>
+                {#each characters as item, i}
+
+                    <!-- i staat voor alle items individueel, dus in dit geval elke li -->
+                    <!-- Ik haal de waarde op bij de const loadDelay die in het script hierboven staat-->
+                    <!-- Met s geef ik aan dat het om secondes gaat -->
+                    <!-- Ik zet op elke li een animation delay waardoor elke li individueel reageerd -->
+                    <li style="animation-delay: {i * loadDelay}s">
                         <!-- ik heb voor elke member een link gemaakt naar /id -->
                         <!-- ik heb class:selected gebruikt zodat de geselecteerde member visueel wordt aangegeven -->
                         <!-- ik preload de data alvast zodat als er op geklikt word het niet lang hoeft te laden-->
@@ -118,17 +126,20 @@
 
     li {
         list-style-type: none;
+        transform: translateY(10rem) scale(0.5);
+        animation: fadeInUp 0.4s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+    to {
+        opacity: 1;
         transform: translateY(0) scale(1);
-        transition-duration: 0.5s;
-
-        @starting-style {
-            transform: translateY(10rem) scale(0.5);
-        }
     }
+}
 
-    li:hover {
+    /* li:hover {
         transform: scale(1.1);
-    }
+    } */
 
     /* Styling user buttons */
     .user-btn {
