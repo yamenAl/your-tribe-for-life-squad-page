@@ -6,7 +6,7 @@
     export let characters = [];
 
     // Delay per character in seconden, hierdoor worden de karakters niet tegelijk maar na elkaar ingeladen
-    const loadDelay = 0.025;
+    const loadDelay = 0.1;
 </script>
   
 <section class="app">
@@ -127,7 +127,7 @@
     li {
         list-style-type: none;
         transform: translateY(10rem) scale(0.5);
-        animation: fadeInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        animation: fadeInUp 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     }
 
     @keyframes fadeInUp {
