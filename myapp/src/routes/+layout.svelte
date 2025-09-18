@@ -1,4 +1,5 @@
 <script>
+  import '$lib/assets/stylesheet.css'
   import { page, navigating } from '$app/stores';
   import HamburgerMenu  from '$lib/components/Header.svelte';  
   export let data;
