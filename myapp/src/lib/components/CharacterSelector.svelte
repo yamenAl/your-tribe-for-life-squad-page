@@ -127,7 +127,7 @@
     li {
         list-style-type: none;
         transform: translateY(10rem) scale(0.5);
-        animation: fadeInUp 0.4s ease forwards;
+        animation: fadeInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     }
 
     @keyframes fadeInUp {
