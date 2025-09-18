@@ -1,13 +1,15 @@
-<!--hier kan je header en footer plaatsen die worden automatich op elke pagina
-hetzelfde geladen zodat je het niet steeds opnieuw hoeft te doen-->
 <script>
-  	import '$lib/assets/stylesheet.css'
-
+  import '$lib/assets/stylesheet.css'
+  import { page, navigating } from '$app/stores';
+  import HamburgerMenu  from '$lib/components/Header.svelte';  
+  export let data;
+  const { MemberData } = data; // ik heb de MemberData uit de data gehaald zodat ik die kan gebruiken
 </script>
-<header>Mijn header</header>
 
-  <main>
-	<slot /> <!-- dit is een term voor dat de hier de +pages geladen word  -->
+<header>
+  <HamburgerMenu  />
+</header>
+
+<main>
+      <slot />
   </main>
-  
-  <footer>Mijn footer</footer>
