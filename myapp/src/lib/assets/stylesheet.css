@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Silkscreen';
+  src: url('/fonts/Silkscreen/Silkscreen-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 :root{
     --primary-color:#211C75;
     --secondary-color:#351FB7;
@@ -9,14 +16,12 @@
     --black:#000000;
 
 
-    font-family: "Open Sans", serif;
+    font-family: 'Silkscreen', system-ui, ui-sans-serif, sans-serif;
   --fs-small:   clamp(0.875rem, calc(16 / 60 * var(--grid-col)), 1rem);
   --fs-medium:  clamp(1rem,     calc(24 / 60 * var(--grid-col)), 1.25rem);
   --fs-large:   clamp(1.5rem,   calc(40 / 60 * var(--grid-col)), 2rem);
   --fs-title:   clamp(2rem,     calc(52 / 60 * var(--grid-col)), 3rem);
   --fs-display: clamp(2.5rem,   calc(64 / 60 * var(--grid-col)), 3.5rem);
-
-
 
 
   --radius-10: 10px;
@@ -30,24 +35,21 @@
     box-sizing:border-box;
  }
 
-html,body{ 
+
+html,body { 
     margin:0;
     padding: 0;
-  
- }
+}
 
-a{ 
+a { 
     text-decoration:none;
-    }
+}
 
-
-html{
+html {
   background-color: var(--dark-blue);
   scroll-behavior: smooth;
 }
-body{
 
-}
 
 h1{ font-size: var(--fs-display); letter-spacing:-0.04em;  
 }
