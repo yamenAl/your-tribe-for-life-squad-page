@@ -14,11 +14,12 @@
       width="300" 
       alt={member.name} 
     />
-  {/if}
+  {/if} 
 
   </section>
 
 <style>
+  /*viewtransition*/
 .character-reveal  {
   animation: revealPixel 1000ms steps(10) forwards;
   will-change: clip-path;
