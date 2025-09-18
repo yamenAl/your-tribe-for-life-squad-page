@@ -116,6 +116,13 @@
 
     li {
         list-style-type: none;
+        scale: 1;
+        transition-duration: 0.5s;
+
+        @starting-style {
+            scale: 0;
+
+        }
     }
 
     /* Styling user buttons */
