@@ -23,4 +23,32 @@
     {/if}
   {/key}
   
+  export let data;
+  let member, id;
   $: ({ member, id } = data ?? {});  
+</script>
+
+<section class="character">
+  <section class="character-info">
+    <h1> <span>{member.name}</span></h1>
+         
+    <section>
+      {#if member.profilepicture}
+        <img src={member.profilepicture} width="250" alt={member.name} />
+      {/if}
+    </section>
+
+    <div class="ellipse"></div>
+</section>
+
+  <section class="card">
+    
+    <div class="squad">SQUAD {member.squad}</div>
+
+    <div class="card-bottom">
+      <p class="card__quote">"{member.bio}"</p>
+      <a href="#"> CHARACTER PROFILE </a>
+    </div>
+
+  </section>
+</section>
