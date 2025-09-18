@@ -1,5 +1,4 @@
 <script>
-  import Header from '$lib/components/Header.svelte';
 
   let { data } = $props();
   const member = data.member;
@@ -204,9 +203,6 @@
 
 </style>
 
-<Header />
-
-
 <main class="page">
   <section class="left">
     <figure class="portrait">
@@ -214,8 +210,6 @@
       <img src={imgSrc} alt={"Avatar van " + member.name} />
     </figure>
   </section>
-
-  
 
   <aside class="panel">
       {#if member.website}
