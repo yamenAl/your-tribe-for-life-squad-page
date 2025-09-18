@@ -111,6 +111,8 @@
             grid-gap: 1rem 1rem;
             height: 75vh;
             width: 46vw;
+            box-sizing: border-box;
+            padding: 0.5rem;
         }
     }
 
