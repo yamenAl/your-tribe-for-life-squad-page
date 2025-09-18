@@ -117,11 +117,15 @@
     li {
         list-style-type: none;
         transform: translateY(0) scale(1);
-        transition-duration: 1s;
+        transition-duration: 0.5s;
 
         @starting-style {
-            transform: translateY(10rem) scale(0);
+            transform: translateY(10rem) scale(0.5);
         }
+    }
+
+    li:hover {
+        transform: scale(1.1);
     }
 
     /* Styling user buttons */
