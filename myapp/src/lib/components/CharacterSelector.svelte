@@ -137,9 +137,9 @@
     }
 }
 
-    /* li:hover {
-        transform: scale(1.1);
-    } */
+    li:hover {
+        scale: 1.1;
+    }
 
     /* Styling user buttons */
     .user-btn {
