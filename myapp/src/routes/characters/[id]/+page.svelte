@@ -42,6 +42,14 @@
   }
 
 
+/* tablet* desktop h1*/
+  @media(max-width: 767px){
+
+    .character-info{
+      flex-direction: column-reverse;
+    }
+  }
+
   img{
     position: relative;
     animation: float 3s ease-in-out infinite;
