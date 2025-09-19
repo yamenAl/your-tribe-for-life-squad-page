@@ -1,21 +1,36 @@
 <script>
-    // ik heb de data die ik terugkrijg van de load functie opgehaald
     export let data;
-  
-    // ik heb daarna member en id uit die data gehaald zodat ik die makkelijk kan gebruiken
     const { member, id } = data;
   </script>
   
-  <!-- ik heb de rechterkant van de pagina gemaakt waar het gekozen pixelcharacter tevoorschijn komt -->
+  <!--Dit is de rechterkant van de pagina -->
   
-  <div style="text-align: center;">
-    <!-- ik laat hier de naam van de member zien -->
+  <section style="text-align: center;">
     <h1>{member.name}</h1>
-  
-    <!-- ik heb een check gemaakt: als er een profielfoto is, dan laat ik die zien -->
+    
     {#if member.profilepicture}
-      <!-- ik heb de foto laten zien met een breedte van 300px -->
-      <img src={member.profilepicture} width="300" alt={member.name} />
-    {/if}
-  </div>
-  
+    <img class="character-reveal " 
+      src={member.profilepicture} 
+      width="300" 
+      alt={member.name} 
+    />
+  {/if} 
+
+  </section>
+
+<style>
+  /*viewtransition*/
+.character-reveal  {
+  animation: revealPixel 1000ms steps(10) forwards;
+  will-change: clip-path;
+}
+
+@keyframes revealPixel {
+  from { clip-path: inset(100% 0 0 0); } 
+  to   { clip-path: inset(0 0 0 0); }    
+}
+</style>
+    
+
+
+
