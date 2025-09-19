@@ -61,7 +61,7 @@
       filter: contrast(1.1) saturate(1.2) brightness(1.02);
     }
   
-    /
+    
     .start-screen::after {
       content: "";
       position: absolute; inset: 0;
