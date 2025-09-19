@@ -6,9 +6,10 @@
   const { MemberData } = data; // ik heb de MemberData uit de data gehaald zodat ik die kan gebruiken
 </script>
 
-<header>
-  <HamburgerMenu  />
-</header>
+
+  <header>
+    <HamburgerMenu />
+  </header>
 
 <main>
       <slot />

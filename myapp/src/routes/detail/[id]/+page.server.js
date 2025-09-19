@@ -1,6 +1,7 @@
 import MemberData from '$lib/data/data.json';
 import { error } from '@sveltejs/kit';
 
+
 export async function load({ params, fetch }) {
   //  Get the member from Directus API
   const res = await fetch(
