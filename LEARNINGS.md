@@ -64,6 +64,8 @@ Wat zou ik moeten veranderen om prettiger samen te werken
 nayome:Ik wil beter leren communiceren waar ik mee bezig ben en wanneer ik daarmee aan de slag ga. Ook wil ik de opgelegde taken duidelijker indelen, zodat ik niet te lang blijf hangen bij één taak. Voor mezelf wil ik het eenvoudiger maken door niet steeds extra dingen toe te voegen, maar vaker gewoon te doen wat er gevraagd wordt. Soms wil ik te veel in één keer doen, waardoor ik een onmogelijke planning creëer en aan drie dingen tegelijk werk. Dat zorgt voor chaos en brengt onduidelijkheid voor zowel mijzelf als mijn teamleden.
 
 yamen 
+Beter en vaker communiceren waar ik mee bezig ben en wanneer.
+Taken duidelijker indelen en timeboxen
 
 clarice 
 
@@ -71,8 +73,10 @@ Waar ben je trots op?
 nayome :Ik ben trots op onze squadpage en op hoe soepel de samenwerking is verlopen. Ondanks dat we individueel nog bezig waren om SvelteKit beter te begrijpen en aan onze eigen profile card te werken, hebben we toch de tijd genomen om goed te communiceren en samen te zitten aan het project. Daarnaast ben ik ook trots op onze creativiteit en hoe we die samen hebben weten te bundelen tot een mooi eindresultaat.
 
 yamen 
+Ik ben trots op ons website werk ziet er goed uit en werkt zoals het moet. Naast het hoofdproject pakken we ook de persoonlijke site op. We laten beide lekker doorlopen en leren ondertussen nieuwe dingen voor beide projecten.
 
 clarice 
+
 
 
 
