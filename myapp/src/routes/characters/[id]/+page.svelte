@@ -29,7 +29,7 @@
  
 <style>
   :global body {
-    overflow: hidden; /* blokkeert scrollen */
+    overflow: hidden; 
     height: 100%; 
     background-color:#211C75;
   }
