@@ -1,7 +1,8 @@
 <script>
-    export let data;
-    const { member, id } = data;
-  </script>
+  export let data;
+  let member, id;
+  $: ({ member, id } = data ?? {});  
+</script>
   
   <!--Dit is de rechterkant van de pagina -->
   
@@ -9,18 +10,15 @@
     <h1>{member.name}</h1>
     
     {#if member.profilepicture}
-    <img class="character-reveal " 
-      src={member.profilepicture} 
-      width="300" 
-      alt={member.name} 
-    />
-  {/if} 
+    <img class="character-reveal" src={member.profilepicture} alt={member.name} />
+  {/if}
+  
 
   </section>
 
 <style>
   /*viewtransition*/
-.character-reveal  {
+.character-reveal{
   animation: revealPixel 1000ms steps(10) forwards;
   will-change: clip-path;
 }

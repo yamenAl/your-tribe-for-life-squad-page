@@ -9,9 +9,9 @@
     <h1> <span>{member.name}</span></h1>
     <section>
       {#if member.profilepicture}
-        <img src={member.profilepicture} width="200" alt={member.name} /> <!-- AANPASSING CCCCCCCCCCCCCCCCCCCCCCC -->
+        <img  class='character-reveal'src={member.profilepicture} width="200" alt={member.name} /> 
       {/if}
-      <div class="ellipse"></div> <!-- AANPASSING CCCCCCCCCCCCCCCCCCCCCCC -->
+      <div class="ellipse"></div> 
     </section>
 </section>
  
@@ -29,39 +29,70 @@
  
 <style>
   :global body {
+    overflow: hidden; /* blokkeert scrollen */
+    height: 100%; 
     background-color:#211C75;
   }
  
   .character {
-    margin: 0 auto;
-    text-align: center;
- 
-    /* AANPASSING CCCCCCCCCCCCCCCCCCCCCCC */
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    position: fixed;
-    height: 65vh;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    box-sizing: border-box;  /* padding binnen element inplaats van erbuiten */
-    padding: 2rem;
-    padding-top: 4rem;
- 
-    /* Tablet & laptop */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+
+}
+
+.character {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+/*voor hele kleine schermen*/
+@media (max-width: 380px) {
+  .character {
+    padding: 0.5rem; 
+    gap: 0.5rem; 
+    scale: 0.9; 
+  }
+
+  .character h1 {
+    font-size: 1rem;
+  }
+
+  .character img {
+    width: 250px;
+  }
+  .card {
+    display: none;
+  }
+}
+
+
+/* Tablet & laptop */
     @media (min-width: 700px) {
+      .character {
       height: 100vh;
       bottom:0;
-      left:auto;
+      right: 0;
       width: 50vw;
       justify-content: center;
+   }
     }
-  }
+  
  
-  /* AANPASSING CCCCCCCCCCCCCCCCCCCCCCC */
+
   .character-info {
     display: flex;
     flex-direction: column;
@@ -69,39 +100,53 @@
     align-items: center;
     text-align: center;
   }
- 
-/* tablet* desktop h1*/
+
   @media(max-width: 767px){
  
     .character-info{
-      flex-direction: column; /* AANPASSING CCCCCCCCCCCCCCCCCCCCCCC */
+      flex-direction: column;
     }
   }
  
-  img{
+  img {
     position: relative;
+    width: 180px;
     animation: float 3s ease-in-out infinite;
-    width: 200px;
- 
-    @media (min-width: 700px) {
-      width: 18rem;
-    }
+    will-change: transform, clip-path;
   }
- 
+
+  .character-reveal {
+    animation: revealPixel 1s steps(10) forwards;
+  }
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50%      { transform: translateY(-12px); }
   }
- 
+
+  @keyframes revealPixel {
+    from { clip-path: inset(100% 0 0 0); }
+    to   { clip-path: inset(0 0 0 0); }
+  }
+
+
+
+@media (min-width: 700px) {
+  img {
+    width: 18rem;
+  }
+}
+
+
+
   h1 {
     background-color: #88E2C1;
     color: black;
-    /* AANPASSING CCCCCCCCCCCCCCCCCCCCCCC */
-    font-size: 1rem;
+    font-size: 15px;
     padding: 5px 20px;
     border-radius: 10px;
     width: fit-content;
-    margin: 10px auto 5px;
+    margin: auto 20px;
     border: 4px solid black;     
     border-bottom: 10px solid #3a5a4a;
     transform: skewX(-10deg);   
@@ -122,15 +167,15 @@
     background-color: #61B395;
     border-radius: 25px;
     width: 250px;
-    margin: 20px auto 0;
-    height: 160px;
+    margin: 10px auto 0;
+    height: 100px;
   }
  
   .squad { font-weight: 700; text-align: left; padding: 15px; }
  
   .card-bottom {
     background-color: #88E2C1;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     border-radius: 25px;
   }
@@ -166,4 +211,5 @@
       rgba(0,0,0,.18) 55%,
       rgba(0,0,0,0) 70%);
   }
+
 </style>

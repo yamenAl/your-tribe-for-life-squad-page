@@ -14,3 +14,18 @@
 <main>
       <slot />
   </main>
+
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #211C75;
+      color: white;
+      z-index: 1000;
+    }
+    main {
+    margin-top: 70px;
+  }
+  </style>

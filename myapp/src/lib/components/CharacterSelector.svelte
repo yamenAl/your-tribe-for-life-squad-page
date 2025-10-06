@@ -12,7 +12,7 @@
 <section class="app">
     <nav class="sidebar">
     <h2>Members</h2>
-        <!-- filter voor squads -->
+        <!-- filter voor squads --
         <form>
             <fieldset>
                 <legend>Select a squad</legend>
@@ -41,8 +41,9 @@
                 </li>
             {/each}
         </ul>
-        <!-- Selecteerd een willekeurig profiel -->
+        <!-- Selecteerd een willekeurig profiel --
         <button aria-label="Generate a random user">random</button>
+    -->
     </nav>
     <main class="detail" aria-busy={$navigating ? 'true' : 'false'}>
         <!-- dit is de loading state , ik heb een if-statement gemaakt: als er genavigeerd wordt laat ik "Laden..." zien -->
@@ -61,11 +62,13 @@
         display: flex;       
         flex-direction: column;
         gap: 1rem;
-        height: 35vh;
+        height: 20vh;
+         overflow: hidden; 
         width: 100%;
         box-sizing: border-box;
         padding: 1rem;
         margin: 0;
+
         background-color: #9E7BEE;
         
         /* Tablet & laptop */
@@ -109,7 +112,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
             grid-gap: 1rem 1rem;
-            height: 75vh;
+            height: 100vh;
             width: 46vw;
             box-sizing: border-box;
             padding: 0.5rem;
